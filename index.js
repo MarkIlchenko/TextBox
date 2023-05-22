@@ -1,11 +1,10 @@
+const inputField = document.getElementById("inputField");
+const message = document.getElementById("message");
 
-let popupText = document.getElementById('popup-text');
-let popupMessage = document.getElementById('popup-message');
-
-popupText.addEventListener('blur', function() {
-    popupMessage.style.display = 'none';
+inputField.addEventListener("focus", () => {
+    message.style.display = "block";
 });
 
-popupText.addEventListener('mouseout', function() {
-    popupMessage.style.display = 'none';
+inputField.addEventListener("blur", () => {
+    message.style.display = "none";
 });
